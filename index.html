@@ -39,19 +39,13 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+              <a class="nav-link js-scroll-trigger" href="#services">Introduction</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Spectrograms</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#team">Team</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+              <a class="nav-link js-scroll-trigger" href="#audio">Audio Sample</a>
             </li>
           </ul>
         </div>
@@ -62,15 +56,20 @@
     <header class="masthead">
       <div class="container">
         <div class="intro-text">
-          <div class="intro-lead-in">Music source seperation</div>
+          <div class="intro-lead-in">Singing Voice Separation</div>
           <div class="intro-lead-in">Using generative adversarial</div>
           <div class="intro-lead-in">networks</div>
+
 
           <!--<div class="intro-heading">Music source seperation</div>-->
           <!--<div class="intro-heading">Using generative adversarial</div>-->
           <!--<div class="intro-heading">networks</div>-->
           <!--<a class="btn btn-xl js-scroll-trigger" href="#portfolio">Spectrogram samples</a>-->
           <a class="btn btn-xl js-scroll-trigger" href="#portfolio">Audio samples</a>
+
+          <div class=" offset-md-6 col-md-4">
+            <span class="copyright">E-mail : kekepa@snu.ac.kr </span>
+          </div>
         </div>
       </div>
     </header>
@@ -88,12 +87,8 @@
           <div class="col-md-12">
 
             <h4 class="service-heading">Abstract</h4>
-            <p class="text-muted text-left"> Music source separation is an important task because of its potential of being used in many applications in music information
-              retrieval field. In this paper, we propose a novel approach using generative adversarial networks(GANs) to solve this task.
-              We apply Wasserstein GANs in conditional GANs fashion to extract the vocal and accompaniment conditioning on the mixture.
-              As a deep learning model, we use U-net architecture whose layers are composed of convolutional neural networks.
-              The experiment shows that it achieves   meaningful results on the SiSEC DSD100 dataset.
-
+            <p class="text-muted text-left"> Music source separation is an important task because of its potential of being used in many applications in music information retrieval field. In this paper, we propose a novel approach extending Wasserstein generative adversarial networks (GANs) to separate singing voice from the mixture signal.
+              We used the mixture signal as a condition to generate singing voices and applied the U-net style network for the stable training of the model. Experiments with the DSD100 dataset show the promising results with the potential of using the GANs for music source separation.
             </p>
           </div>
 
@@ -120,11 +115,11 @@
 
         <div class="row">
 
-          <div class="col-md-1 col-sm-0 portfolio-item">
+          <div class="col-md-1 col-sm-0 col-xs-0 portfolio-item">
           </div>
 
 
-          <div class="col-md-2 col-sm-6 portfolio-item">
+          <div class="col-md-2 col-sm-6 col-xs-6 portfolio-item">
             <!--<a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">-->
               <!--<div class="portfolio-hover">-->
                 <!--<div class="portfolio-hover-content">-->
@@ -141,7 +136,7 @@
           </div>
 
 
-          <div class="col-md-2 col-sm-6 portfolio-item">
+          <div class="col-md-2 col-sm-6 col-xs-6 portfolio-item">
             <!--<a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">-->
               <!--<div class="portfolio-hover">-->
                 <!--<div class="portfolio-hover-content">-->
@@ -157,7 +152,7 @@
             </div>
           </div>
 
-          <div class="col-md-2 col-sm-6 portfolio-item">
+          <div class="col-md-2 col-sm-6 col-xs-6 portfolio-item">
             <!--<a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">-->
               <!--<div class="portfolio-hover">-->
                 <!--<div class="portfolio-hover-content">-->
@@ -173,7 +168,7 @@
             </div>
           </div>
 
-          <div class="col-md-2 col-sm-6 portfolio-item">
+          <div class="col-md-2 col-sm-6 col-xs-6 portfolio-item">
             <!--<a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">-->
               <!--<div class="portfolio-hover">-->
                 <!--<div class="portfolio-hover-content">-->
@@ -188,7 +183,7 @@
             </div>
           </div>
 
-          <div class="col-md-2 col-sm-6 portfolio-item">
+          <div class="col-md-2 col-sm-6 col-xs-6 portfolio-item">
             <!--<a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">-->
               <!--<div class="portfolio-hover">-->
                 <!--<div class="portfolio-hover-content">-->
@@ -215,11 +210,11 @@
 
         <div class="row">
 
-          <div class="col-md-1 col-sm-0 portfolio-item">
+          <div class="col-md-1 col-sm-0 col-xs-0 portfolio-item">
           </div>
 
 
-          <div class="col-md-2 col-sm-6 portfolio-item">
+          <div class="col-md-2 col-sm-6 col-xs-6  portfolio-item">
             <!--<a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">-->
               <!--<div class="portfolio-hover">-->
                 <!--<div class="portfolio-hover-content">-->
@@ -229,30 +224,34 @@
               <img class="img-fluid" src="img/experiment/2-mixture.png" alt="">
             <!--</a>-->
             <div class="portfolio-caption">
+              <p class="text-muted">     &nbsp;     </p>
               <p class="text-muted"> &nbsp; </p>
-              <p class="text-muted">     Mixture    </p>
+              <p class="text-muted">     (a)Mixture    </p>
+              <p class="text-muted">     &nbsp;     </p>
               <p class="text-muted">     &nbsp;     </p>
             </div>
           </div>
 
 
-          <div class="col-md-2 col-sm-6 portfolio-item">
+          <div class="col-md-2 col-sm-6 col-xs-6 portfolio-item">
             <!--<a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">-->
               <!--<div class="portfolio-hover">-->
                 <!--<div class="portfolio-hover-content">-->
                   <!--<i class="fa fa-plus fa-3x"></i>-->
                 <!--</div>-->
               <!--</div>-->
-              <img class="img-fluid" src="img/experiment/2-original.png" alt="">
+              <img class="img-fluid" src="img/experiment/2-truevocal.png" alt="">
             <!--</a>-->
             <div class="portfolio-caption">
-              <!--<p class="text-muted">&nbsp; </p>-->
-              <p class="text-muted">     Origin Accompaniment    </p>
+              <p class="text-muted">     &nbsp;     </p>
+              <p class="text-muted">&nbsp; </p>
+              <p class="text-muted">     (b)True Vocal    </p>
+              <p class="text-muted">     &nbsp;     </p>
               <p class="text-muted">     &nbsp;     </p>
             </div>
           </div>
 
-          <div class="col-md-2 col-sm-6 portfolio-item">
+          <div class="col-md-2 col-sm-6 col-xs-6 portfolio-item">
             <!--<a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">-->
               <!--<div class="portfolio-hover">-->
                 <!--<div class="portfolio-hover-content">-->
@@ -262,13 +261,14 @@
               <img class="img-fluid" src="img/experiment/2-onlygan.png" alt="">
             <!--</a>-->
             <div class="portfolio-caption">
-              <p class="text-muted">Only using GANs loss extracted Accompaniment</p>
-              <!--<p class="text-muted">     &nbsp;     </p>-->
+              <p class="text-muted">     &nbsp;     </p>
+              <p class="text-muted">(c)estimated vocal using only generative adversarial loss</p>
+              <p class="text-muted">     &nbsp;     </p>
 
             </div>
           </div>
 
-          <div class="col-md-2 col-sm-6 portfolio-item">
+          <div class="col-md-2 col-sm-6 col-xs-6 portfolio-item">
             <!--<a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">-->
               <!--<div class="portfolio-hover">-->
                 <!--<div class="portfolio-hover-content">-->
@@ -278,22 +278,24 @@
               <img class="img-fluid" src="img/experiment/2-onlyl1.png" alt="">
             <!--</a>-->
             <div class="portfolio-caption">
-              <p class="text-muted">Only using L1 loss extracted Accompaniment </p>
-              <!--<p class="text-muted">     &nbsp;     </p>-->
+              <p class="text-muted">     &nbsp;     </p>
+              <p class="text-muted">(d)estimated vocal using only L1 loss </p>
+              <p class="text-muted">     &nbsp;     </p>
+              <p class="text-muted">     &nbsp;     </p>
             </div>
           </div>
 
-          <div class="col-md-2 col-sm-6 portfolio-item">
+          <div class="col-md-2 col-sm-6 col-xs-6 portfolio-item">
             <!--<a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">-->
               <!--<div class="portfolio-hover">-->
                 <!--<div class="portfolio-hover-content">-->
                   <!--<i class="fa fa-plus fa-3x"></i>-->
                 <!--</div>-->
               <!--</div>-->
-              <img class="img-fluid" src="img/experiment/2-both.png" alt="">
+              <img class="img-fluid" src="img/experiment/2-usingboth.png" alt="">
             <!--</a>-->
             <div class="portfolio-caption">
-              <p class="text-muted">Using both GANs + L1 loss extracted Accompaniment </p>
+              <p class="text-muted">(e)estimated vocal using both generative adversarial loss and L1 loss </p>
             </div>
           </div>
 
@@ -309,42 +311,235 @@
     </section>
 
 
+
+
+
+
+
+    <!-- audio samples -->
+    <section id="audio">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Audio Samples</h2>
+            <h3 class="section-subheading text-muted">This is demo for paper “Singing Voice Separation using Generative Adversarial Networks”</h3>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-12">
+
+
+            <div class="container">
+              <h2>Only GANs loss</h2>
+              <!--<p>The .table-hover class enables a hover state on table rows:</p>-->
+              <table class="table table-hover">
+                <thead>
+                <tr>
+                  <th style="text-align: center; width :30%;"></th>
+                  <th style="text-align: center; width: 70%;">Vocal</th>
+                  <!--<th style="text-align: center;">Accompaniment</th>-->
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>Cold Play - Paradise</td>
+                  <td>
+                    <audio controls>
+                      <source src="./audio/only_gan/Coldplay-Paradise_onlyGAN.mp3" type="audio/mpeg">
+                      Your browser does not support the audio tag.
+                    </audio>
+                  </td>
+                  <!--<td></td>-->
+                </tr>
+                <tr>
+                  <td>Gallant - Episode</td>
+                  <td>
+                    <audio controls>
+                      <source src="./audio/only_gan/Gallant-Episode_onlyGAN.mp3" type="audio/mpeg">
+                      Your browser does not support the audio tag.
+                    </audio>
+                  </td>
+                  <!--<td>mary@example.com</td>-->
+                </tr>
+                <tr>
+                  <td>IU - Palette</td>
+                  <td>
+                    <audio controls>
+                      <source src="./audio/only_gan/IU-Palette_onlyGAN.mp3" type="audio/mpeg">
+                      Your browser does not support the audio tag.
+                    </audio>
+                  </td>
+                  <!--<td>july@example.com</td>-->
+                </tr>
+                <tr>
+                  <td>Red Velvet – Red Flavor </td>
+                  <td>
+                    <audio controls>
+                      <source src="./audio/only_gan/RedVelvet-RedFlavor_onlyGAN.mp3" type="audio/mpeg">
+                      Your browser does not support the audio tag.
+                    </audio>
+                  </td>
+                  <!--<td>july@example.com</td>-->
+                </tr>
+                </tbody>
+              </table>
+            </div>
+
+
+            <div class="container">
+              <h2>Only L1 loss</h2>
+              <!--<p>The .table-hover class enables a hover state on table rows:</p>-->
+              <table class="table table-hover">
+                <thead>
+                <tr>
+                  <th style="text-align: center; width :30%;"></th>
+                  <th style="text-align: center; width: 70%;">Vocal</th>
+                  <!--<th style="text-align: center;">Accompaniment</th>-->
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>Cold Play - Paradise</td>
+                  <td>
+                    <audio controls>
+                      <source src="./audio/only_l1/Coldplay-Paradise_L1.mp3" type="audio/mpeg">
+                      Your browser does not support the audio tag.
+                    </audio>
+                  </td>
+                  <!--<td></td>-->
+                </tr>
+                <tr>
+                  <td>Gallant - Episode</td>
+                  <td>
+                    <audio controls>
+                      <source src="./audio/only_l1/Gallant-Episode_L1.mp3" type="audio/mpeg">
+                      Your browser does not support the audio tag.
+                    </audio>
+                  </td>
+                  <!--<td>mary@example.com</td>-->
+                </tr>
+                <tr>
+                  <td>IU - Palette</td>
+                  <td>
+                    <audio controls>
+                      <source src="./audio/only_l1/IU-Palette_L1.mp3" type="audio/mpeg">
+                      Your browser does not support the audio tag.
+                    </audio>
+                  </td>
+                  <!--<td>july@example.com</td>-->
+                </tr>
+                <tr>
+                  <td>Red Velvet – Red Flavor </td>
+                  <td>
+                    <audio controls>
+                      <source src="./audio/only_l1/RedVelvet-RedFlavor_L1.mp3" type="audio/mpeg">
+                      Your browser does not support the audio tag.
+                    </audio>
+                  </td>
+                  <!--<td>july@example.com</td>-->
+                </tr>
+                </tbody>
+              </table>
+            </div>
+
+
+            <div class="container">
+              <h2>GANs + L1 loss</h2>
+              <!--<p>The .table-hover class enables a hover state on table rows:</p>-->
+              <table class="table table-hover">
+                <thead>
+                <tr>
+                  <th style="text-align: center; width :30%;"></th>
+                  <th style="text-align: center; width: 70%;">Vocal</th>
+                  <!--<th style="text-align: center;">Accompaniment</th>-->
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>Cold Play - Paradise</td>
+                  <td>
+                    <audio controls>
+
+                    </audio>
+                  </td>
+                  <!--<td></td>-->
+                </tr>
+                <tr>
+                  <td>Gallant - Episode</td>
+                  <td>Moe</td>
+                  <!--<td>mary@example.com</td>-->
+                </tr>
+                <tr>
+                  <td>IU - Palette</td>
+                  <td>Dooley</td>
+                  <!--<td>july@example.com</td>-->
+                </tr>
+                <tr>
+                  <td>Red Velvet – Red Flavor </td>
+                  <td>Dooley</td>
+                  <!--<td>july@example.com</td>-->
+                </tr>
+                </tbody>
+              </table>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+          </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
     <!-- Footer -->
     <footer>
       <div class="container">
         <div class="row">
-          <div class="col-md-4">
-            <span class="copyright">Copyright &copy; Your Website 2017</span>
+          <div class="offset-md-8 col-md-4">
+            <span class="copyright">E-mail : kekepa@snu.ac.kr </span>
           </div>
-          <div class="col-md-4">
-            <ul class="list-inline social-buttons">
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fa fa-twitter"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fa fa-facebook"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fa fa-linkedin"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <ul class="list-inline quicklinks">
-              <li class="list-inline-item">
-                <a href="#">Privacy Policy</a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">Terms of Use</a>
-              </li>
-            </ul>
-          </div>
+          <!--<div class="col-md-4">-->
+            <!--<ul class="list-inline social-buttons">-->
+              <!--<li class="list-inline-item">-->
+                <!--<a href="#">-->
+                  <!--<i class="fa fa-twitter"></i>-->
+                <!--</a>-->
+              <!--</li>-->
+              <!--<li class="list-inline-item">-->
+                <!--<a href="#">-->
+                  <!--<i class="fa fa-facebook"></i>-->
+                <!--</a>-->
+              <!--</li>-->
+              <!--<li class="list-inline-item">-->
+                <!--<a href="#">-->
+                  <!--<i class="fa fa-linkedin"></i>-->
+                <!--</a>-->
+              <!--</li>-->
+            <!--</ul>-->
+          <!--</div>-->
+          <!--<div class="col-md-4">-->
+            <!--<ul class="list-inline quicklinks">-->
+              <!--<li class="list-inline-item">-->
+                <!--<a href="#">Privacy Policy</a>-->
+              <!--</li>-->
+              <!--<li class="list-inline-item">-->
+                <!--<a href="#">Terms of Use</a>-->
+              <!--</li>-->
+            <!--</ul>-->
+          <!--</div>-->
         </div>
       </div>
     </footer>
