@@ -8,762 +8,155 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Agency - Start Bootstrap Theme</title>
+    <title>Resume - Start Bootstrap Theme</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/agency.css" rel="stylesheet">
+    <link href="css/resume.css" rel="stylesheet">
 
   </head>
 
   <body id="page-top">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-      <div class="container">
-        <!--<a class="navbar-brand js-scroll-trigger" href="#page-top">Music Audio Research Group</a>-->
-        <img class="navbar-brand js-scroll-trigger" src="./img/WhiteLogo.png" style="width: 200px" />
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fa fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Introduction</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Spectrograms</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#audio">Audio Sample</a>
-            </li>
-          </ul>
-        </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-block d-lg-none">Clarence Taylor</span>
+        <span class="d-none d-lg-block">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.png" alt="">
+        </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+          </li>
+        </ul>
       </div>
     </nav>
 
-    <!-- Header -->
-    <header class="masthead">
-      <div class="container">
-        <div class="intro-text">
-          <div class="intro-lead-in">Singing Voice Separation</div>
-          <div class="intro-lead-in">Using generative adversarial</div>
-          <div class="intro-lead-in">networks</div>
+    <div class="container-fluid p-0">
 
-
-          <!--<div class="intro-heading">Music source seperation</div>-->
-          <!--<div class="intro-heading">Using generative adversarial</div>-->
-          <!--<div class="intro-heading">networks</div>-->
-          <!--<a class="btn btn-xl js-scroll-trigger" href="#portfolio">Spectrogram samples</a>-->
-          <a class="btn btn-xl js-scroll-trigger" href="#portfolio">Audio samples</a>
-
-          <div class=" offset-md-6 col-md-4">
-            <span class="copyright">E-mail : kekepa@snu.ac.kr </span>
+      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+        <div class="my-auto">
+          <h1 class="mb-1">Hyukryul(Henry)
+            <span class="text-primary">Yang</span>
+          </h1>
+          <div class="subheading mb-4">
+            MPhil Researcher<br>
+            Visual Intelligence Laboratory<br>
+            Department of CSE<br>
+            Hong Kong University of Science and Technology
+            <br>
+            <a href="mailto:name@email.com">hr.yang@connect.ust.hk </a>
           </div>
-        </div>
-      </div>
-    </header>
-
-    <!-- Services -->
-    <section id="services">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Introduction</h2>
-            <h3 class="section-subheading text-muted">This is a demo website for paper “Music source separation for generative adversarial networks”</h3>
-          </div>
-        </div>
-        <div class="row text-center">
-          <div class="col-md-12">
-
-            <h4 class="service-heading">Abstract</h4>
-            <p class="text-muted text-left"> Music source separation is an important task because of its potential of being used in many applications in music information retrieval field. In this paper, we propose a novel approach extending Wasserstein generative adversarial networks (GANs) to separate singing voice from the mixture signal.
-              We used the mixture signal as a condition to generate singing voices and applied the U-net style network for the stable training of the model. Experiments with the DSD100 dataset show the promising results with the potential of using the GANs for music source separation.
+            <p>
+              I'm pursuing my M.Phil studies with supervision of Prof.<a href="https://cqf.io"> Qifeng Chen</a>.
+              My main research interests are applications of audio-visual approaches using deep learning.
+              Also, I'm interested with applying reinforcement-learning to Computer Vision area.
             </p>
-          </div>
-
-      </div>
-    </section>
-
-    <!-- Portfolio Grid -->
-    <section class="bg-light" id="portfolio">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Spectrograms</h2>
-            <!--<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>-->
+          <div class="social-icons">
+              <center>
+            <a href="https://www.linkedin.com/in/hyeokryeol-yang-2639a3135/">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/hyeokreal">
+              <i class="fab fa-github"></i>
+            </a>
+              </center>
           </div>
         </div>
+      </section>
 
+      <hr class="m-0">
 
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
+        <div class="my-auto">
+          <h2 class="mb-5">Research Experience</h2>
 
-
-
-
-
-
-
-        <div class="row">
-
-          <div class="col-md-1 col-sm-0 col-xs-0 portfolio-item">
-          </div>
-
-
-          <div class="col-md-2 col-sm-6 col-xs-6 portfolio-item">
-            <!--<a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">-->
-              <!--<div class="portfolio-hover">-->
-                <!--<div class="portfolio-hover-content">-->
-                  <!--<i class="fa fa-plus fa-3x"></i>-->
-                <!--</div>-->
-              <!--</div>-->
-              <img class="img-fluid" src="img/experiment/1-mixture.png" alt="">
-            <!--</a>-->
-            <div class="portfolio-caption">
-              <p class="text-muted"> &nbsp; </p>
-              <p class="text-muted">     Mixture    </p>
-              <p class="text-muted">     &nbsp;     </p>
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+                <h3 class="mb-0">Naver Clova AI</h3>
+                <div class="subheading mb-3">Research Internship (Mentor: <a href="http://people.csail.mit.edu/junyanz/">Jun-yan Zhu</a>) </div>
+                <p> Researched how to predict CTR(Click-through rate) when advertisement images and user features are given. </p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">Mar 2018 - Aug 2018</span>
             </div>
           </div>
 
-
-          <div class="col-md-2 col-sm-6 col-xs-6 portfolio-item">
-            <!--<a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">-->
-              <!--<div class="portfolio-hover">-->
-                <!--<div class="portfolio-hover-content">-->
-                  <!--<i class="fa fa-plus fa-3x"></i>-->
-                <!--</div>-->
-              <!--</div>-->
-              <img class="img-fluid" src="img/experiment/1-origin.png" alt="">
-            <!--</a>-->
-            <div class="portfolio-caption">
-              <p class="text-muted">&nbsp; </p>
-              <p class="text-muted">     Origin Vocal    </p>
-              <p class="text-muted">     &nbsp;     </p>
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Seoul National University</h3>
+              <div class="subheading mb-3">Research Intern (Advisor : Prof. <a href="http://marg.snu.ac.kr/people/">Kyogu Lee</a>)</div>
+              <p>  Researched how to generate matched human’s faces from human’s voices. </p>
             </div>
-          </div>
-
-          <div class="col-md-2 col-sm-6 col-xs-6 portfolio-item">
-            <!--<a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">-->
-              <!--<div class="portfolio-hover">-->
-                <!--<div class="portfolio-hover-content">-->
-                  <!--<i class="fa fa-plus fa-3x"></i>-->
-                <!--</div>-->
-              <!--</div>-->
-              <img class="img-fluid" src="img/experiment/1-onlyganloss.png" alt="">
-            <!--</a>-->
-            <div class="portfolio-caption">
-              <p class="text-muted">Only using GANs loss extracted vocal</p>
-              <p class="text-muted">     &nbsp;     </p>
-
+            <div class="resume-date text-md-right">
+              <span class="text-primary">Jul 2017 - Nov 2017</span>
             </div>
-          </div>
-
-          <div class="col-md-2 col-sm-6 col-xs-6 portfolio-item">
-            <!--<a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">-->
-              <!--<div class="portfolio-hover">-->
-                <!--<div class="portfolio-hover-content">-->
-                  <!--<i class="fa fa-plus fa-3x"></i>-->
-                <!--</div>-->
-              <!--</div>-->
-              <img class="img-fluid" src="img/experiment/1-onlyl1loss.png" alt="">
-            <!--</a>-->
-            <div class="portfolio-caption">
-              <p class="text-muted">Only using L1 loss extracted vocal </p>
-              <p class="text-muted">     &nbsp;     </p>
-            </div>
-          </div>
-
-          <div class="col-md-2 col-sm-6 col-xs-6 portfolio-item">
-            <!--<a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">-->
-              <!--<div class="portfolio-hover">-->
-                <!--<div class="portfolio-hover-content">-->
-                  <!--<i class="fa fa-plus fa-3x"></i>-->
-                <!--</div>-->
-              <!--</div>-->
-              <img class="img-fluid" src="img/experiment/1-using-both.png" alt="">
-            <!--</a>-->
-            <div class="portfolio-caption">
-              <p class="text-muted">Using both GANs + L1 loss extracted vocal </p>
-            </div>
-          </div>
-
-        </div>      <!-- row end -->
-
-
-
-
-
-
-
-        <!-- Heading -->
-
-
-        <div class="row">
-
-          <div class="col-md-1 col-sm-0 col-xs-0 portfolio-item">
-          </div>
-
-
-          <div class="col-md-2 col-sm-6 col-xs-6  portfolio-item">
-            <!--<a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">-->
-              <!--<div class="portfolio-hover">-->
-                <!--<div class="portfolio-hover-content">-->
-                  <!--<i class="fa fa-plus fa-3x"></i>-->
-                <!--</div>-->
-              <!--</div>-->
-              <img class="img-fluid" src="img/experiment/2-mixture.png" alt="">
-            <!--</a>-->
-            <div class="portfolio-caption">
-              <p class="text-muted">     &nbsp;     </p>
-              <p class="text-muted"> &nbsp; </p>
-              <p class="text-muted">     (a)Mixture    </p>
-              <p class="text-muted">     &nbsp;     </p>
-              <p class="text-muted">     &nbsp;     </p>
-            </div>
-          </div>
-
-
-          <div class="col-md-2 col-sm-6 col-xs-6 portfolio-item">
-            <!--<a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">-->
-              <!--<div class="portfolio-hover">-->
-                <!--<div class="portfolio-hover-content">-->
-                  <!--<i class="fa fa-plus fa-3x"></i>-->
-                <!--</div>-->
-              <!--</div>-->
-              <img class="img-fluid" src="img/experiment/2-truevocal.png" alt="">
-            <!--</a>-->
-            <div class="portfolio-caption">
-              <p class="text-muted">     &nbsp;     </p>
-              <p class="text-muted">&nbsp; </p>
-              <p class="text-muted">     (b)True Vocal    </p>
-              <p class="text-muted">     &nbsp;     </p>
-              <p class="text-muted">     &nbsp;     </p>
-            </div>
-          </div>
-
-          <div class="col-md-2 col-sm-6 col-xs-6 portfolio-item">
-            <!--<a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">-->
-              <!--<div class="portfolio-hover">-->
-                <!--<div class="portfolio-hover-content">-->
-                  <!--<i class="fa fa-plus fa-3x"></i>-->
-                <!--</div>-->
-              <!--</div>-->
-              <img class="img-fluid" src="img/experiment/2-onlygan.png" alt="">
-            <!--</a>-->
-            <div class="portfolio-caption">
-              <p class="text-muted">     &nbsp;     </p>
-              <p class="text-muted">(c)estimated vocal using only generative adversarial loss</p>
-              <p class="text-muted">     &nbsp;     </p>
-
-            </div>
-          </div>
-
-          <div class="col-md-2 col-sm-6 col-xs-6 portfolio-item">
-            <!--<a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">-->
-              <!--<div class="portfolio-hover">-->
-                <!--<div class="portfolio-hover-content">-->
-                  <!--<i class="fa fa-plus fa-3x"></i>-->
-                <!--</div>-->
-              <!--</div>-->
-              <img class="img-fluid" src="img/experiment/2-onlyl1.png" alt="">
-            <!--</a>-->
-            <div class="portfolio-caption">
-              <p class="text-muted">     &nbsp;     </p>
-              <p class="text-muted">(d)estimated vocal using only L1 loss </p>
-              <p class="text-muted">     &nbsp;     </p>
-              <p class="text-muted">     &nbsp;     </p>
-            </div>
-          </div>
-
-          <div class="col-md-2 col-sm-6 col-xs-6 portfolio-item">
-            <!--<a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">-->
-              <!--<div class="portfolio-hover">-->
-                <!--<div class="portfolio-hover-content">-->
-                  <!--<i class="fa fa-plus fa-3x"></i>-->
-                <!--</div>-->
-              <!--</div>-->
-              <img class="img-fluid" src="img/experiment/2-usingboth.png" alt="">
-            <!--</a>-->
-            <div class="portfolio-caption">
-              <p class="text-muted">(e)estimated vocal using both generative adversarial loss and L1 loss </p>
-            </div>
-          </div>
-
-        </div>      <!-- row end -->
-
-
-
-
-
-
-
-      </div>
-    </section>
-
-
-
-
-
-
-
-    <!-- audio samples -->
-    <section id="audio">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Audio Samples</h2>
-            <h3 class="section-subheading text-muted">This is demo for paper “Singing Voice Separation using Generative Adversarial Networks”</h3>
-          </div>
-        </div>
-        <div class="row text-center">
-          <div class="col-md-12">
-
-
-            <div class="container">
-              <h2>Only GANs loss</h2>
-              <!--<p>The .table-hover class enables a hover state on table rows:</p>-->
-              <table class="table table-hover">
-                <thead>
-                <tr>
-                  <th style="text-align: center; width :30%;"></th>
-                  <th style="text-align: center; width: 70%;">Vocal</th>
-                  <!--<th style="text-align: center;">Accompaniment</th>-->
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                  <td>Cold Play - Paradise</td>
-                  <td>
-                    <audio controls>
-                      <source src="./audio/only_gan/Coldplay-Paradise_onlyGAN.mp3" type="audio/mpeg">
-                      Your browser does not support the audio tag.
-                    </audio>
-                  </td>
-                  <!--<td></td>-->
-                </tr>
-                <tr>
-                  <td>Gallant - Episode</td>
-                  <td>
-                    <audio controls>
-                      <source src="./audio/only_gan/Gallant-Episode_onlyGAN.mp3" type="audio/mpeg">
-                      Your browser does not support the audio tag.
-                    </audio>
-                  </td>
-                  <!--<td>mary@example.com</td>-->
-                </tr>
-                <tr>
-                  <td>IU - Palette</td>
-                  <td>
-                    <audio controls>
-                      <source src="./audio/only_gan/IU-Palette_onlyGAN.mp3" type="audio/mpeg">
-                      Your browser does not support the audio tag.
-                    </audio>
-                  </td>
-                  <!--<td>july@example.com</td>-->
-                </tr>
-                <tr>
-                  <td>Red Velvet – Red Flavor </td>
-                  <td>
-                    <audio controls>
-                      <source src="./audio/only_gan/RedVelvet-RedFlavor_onlyGAN.mp3" type="audio/mpeg">
-                      Your browser does not support the audio tag.
-                    </audio>
-                  </td>
-                  <!--<td>july@example.com</td>-->
-                </tr>
-                </tbody>
-              </table>
-            </div>
-
-
-            <div class="container">
-              <h2>Only L1 loss</h2>
-              <!--<p>The .table-hover class enables a hover state on table rows:</p>-->
-              <table class="table table-hover">
-                <thead>
-                <tr>
-                  <th style="text-align: center; width :30%;"></th>
-                  <th style="text-align: center; width: 70%;">Vocal</th>
-                  <!--<th style="text-align: center;">Accompaniment</th>-->
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                  <td>Cold Play - Paradise</td>
-                  <td>
-                    <audio controls>
-                      <source src="./audio/only_l1/Coldplay-Paradise_L1.mp3" type="audio/mpeg">
-                      Your browser does not support the audio tag.
-                    </audio>
-                  </td>
-                  <!--<td></td>-->
-                </tr>
-                <tr>
-                  <td>Gallant - Episode</td>
-                  <td>
-                    <audio controls>
-                      <source src="./audio/only_l1/Gallant-Episode_L1.mp3" type="audio/mpeg">
-                      Your browser does not support the audio tag.
-                    </audio>
-                  </td>
-                  <!--<td>mary@example.com</td>-->
-                </tr>
-                <tr>
-                  <td>IU - Palette</td>
-                  <td>
-                    <audio controls>
-                      <source src="./audio/only_l1/IU-Palette_L1.mp3" type="audio/mpeg">
-                      Your browser does not support the audio tag.
-                    </audio>
-                  </td>
-                  <!--<td>july@example.com</td>-->
-                </tr>
-                <tr>
-                  <td>Red Velvet – Red Flavor </td>
-                  <td>
-                    <audio controls>
-                      <source src="./audio/only_l1/RedVelvet-RedFlavor_L1.mp3" type="audio/mpeg">
-                      Your browser does not support the audio tag.
-                    </audio>
-                  </td>
-                  <!--<td>july@example.com</td>-->
-                </tr>
-                </tbody>
-              </table>
-            </div>
-
-
-            <div class="container">
-              <h2>GANs + L1 loss</h2>
-              <!--<p>The .table-hover class enables a hover state on table rows:</p>-->
-              <table class="table table-hover">
-                <thead>
-                <tr>
-                  <th style="text-align: center; width :30%;"></th>
-                  <th style="text-align: center; width: 70%;">Vocal</th>
-                  <!--<th style="text-align: center;">Accompaniment</th>-->
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                  <td>Cold Play - Paradise</td>
-                  <td>
-                    <audio controls>
-
-                    </audio>
-                  </td>
-                  <!--<td></td>-->
-                </tr>
-                <tr>
-                  <td>Gallant - Episode</td>
-                  <td>Moe</td>
-                  <!--<td>mary@example.com</td>-->
-                </tr>
-                <tr>
-                  <td>IU - Palette</td>
-                  <td>Dooley</td>
-                  <!--<td>july@example.com</td>-->
-                </tr>
-                <tr>
-                  <td>Red Velvet – Red Flavor </td>
-                  <td>Dooley</td>
-                  <!--<td>july@example.com</td>-->
-                </tr>
-                </tbody>
-              </table>
-            </div>
-
-
-
-
-
-
-
-
-
-
-
           </div>
 
         </div>
-    </section>
 
+      </section>
 
+      <hr class="m-0">
 
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
+        <div class="my-auto">
+          <h2 class="mb-5">Education</h2>
 
+            <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                <div class="resume-content mr-auto">
+                    <h3 class="mb-0">Hong Kong University of Science and Technology</h3>
+                    <div class="subheading mb-3">Master of Philosophy(CSE)</div>
+                </div>
+                <div class="resume-date text-md-right">
+                    <span class="text-primary">Jul 2018 - Now</span>
+                </div>
+            </div>
 
-
-
-    <!-- Footer -->
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="offset-md-8 col-md-4">
-            <span class="copyright">E-mail : kekepa@snu.ac.kr </span>
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Hanyang University</h3>
+              <div class="subheading mb-3">Bachelor of Business and Computer Science</div>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">Mar 2013 - Feb 2018</span>
+            </div>
           </div>
-          <!--<div class="col-md-4">-->
-            <!--<ul class="list-inline social-buttons">-->
-              <!--<li class="list-inline-item">-->
-                <!--<a href="#">-->
-                  <!--<i class="fa fa-twitter"></i>-->
-                <!--</a>-->
-              <!--</li>-->
-              <!--<li class="list-inline-item">-->
-                <!--<a href="#">-->
-                  <!--<i class="fa fa-facebook"></i>-->
-                <!--</a>-->
-              <!--</li>-->
-              <!--<li class="list-inline-item">-->
-                <!--<a href="#">-->
-                  <!--<i class="fa fa-linkedin"></i>-->
-                <!--</a>-->
-              <!--</li>-->
-            <!--</ul>-->
-          <!--</div>-->
-          <!--<div class="col-md-4">-->
-            <!--<ul class="list-inline quicklinks">-->
-              <!--<li class="list-inline-item">-->
-                <!--<a href="#">Privacy Policy</a>-->
-              <!--</li>-->
-              <!--<li class="list-inline-item">-->
-                <!--<a href="#">Terms of Use</a>-->
-              <!--</li>-->
-            <!--</ul>-->
-          <!--</div>-->
         </div>
-      </div>
-    </footer>
+      </section>
 
-    <!-- Portfolio Modals -->
+      <hr class="m-0">
 
-    <!--&lt;!&ndash; Modal 1 &ndash;&gt;-->
-    <!--<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">-->
-      <!--<div class="modal-dialog">-->
-        <!--<div class="modal-content">-->
-          <!--<div class="close-modal" data-dismiss="modal">-->
-            <!--<div class="lr">-->
-              <!--<div class="rl"></div>-->
-            <!--</div>-->
-          <!--</div>-->
-          <!--<div class="container">-->
-            <!--<div class="row">-->
-              <!--<div class="col-lg-8 mx-auto">-->
-                <!--<div class="modal-body">-->
-                  <!--&lt;!&ndash; Project Details Go Here &ndash;&gt;-->
-                  <!--<h2>Project Name</h2>-->
-                  <!--<p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>-->
-                  <!--<img class="img-fluid d-block mx-auto" src="img/portfolio/01-full.jpg" alt="">-->
-                  <!--<p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>-->
-                  <!--<ul class="list-inline">-->
-                    <!--<li>Date: January 2017</li>-->
-                    <!--<li>Client: Threads</li>-->
-                    <!--<li>Category: Illustration</li>-->
-                  <!--</ul>-->
-                  <!--<button class="btn btn-primary" data-dismiss="modal" type="button">-->
-                    <!--<i class="fa fa-times"></i>-->
-                    <!--Close Project</button>-->
-                <!--</div>-->
-              <!--</div>-->
-            <!--</div>-->
-          <!--</div>-->
-        <!--</div>-->
-      <!--</div>-->
-    <!--</div>-->
 
-    <!--&lt;!&ndash; Modal 2 &ndash;&gt;-->
-    <!--<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">-->
-      <!--<div class="modal-dialog">-->
-        <!--<div class="modal-content">-->
-          <!--<div class="close-modal" data-dismiss="modal">-->
-            <!--<div class="lr">-->
-              <!--<div class="rl"></div>-->
-            <!--</div>-->
-          <!--</div>-->
-          <!--<div class="container">-->
-            <!--<div class="row">-->
-              <!--<div class="col-lg-8 mx-auto">-->
-                <!--<div class="modal-body">-->
-                  <!--&lt;!&ndash; Project Details Go Here &ndash;&gt;-->
-                  <!--<h2>Project Name</h2>-->
-                  <!--<p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>-->
-                  <!--<img class="img-fluid d-block mx-auto" src="img/portfolio/02-full.jpg" alt="">-->
-                  <!--<p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>-->
-                  <!--<ul class="list-inline">-->
-                    <!--<li>Date: January 2017</li>-->
-                    <!--<li>Client: Explore</li>-->
-                    <!--<li>Category: Graphic Design</li>-->
-                  <!--</ul>-->
-                  <!--<button class="btn btn-primary" data-dismiss="modal" type="button">-->
-                    <!--<i class="fa fa-times"></i>-->
-                    <!--Close Project</button>-->
-                <!--</div>-->
-              <!--</div>-->
-            <!--</div>-->
-          <!--</div>-->
-        <!--</div>-->
-      <!--</div>-->
-    <!--</div>-->
-
-    <!--&lt;!&ndash; Modal 3 &ndash;&gt;-->
-    <!--<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">-->
-      <!--<div class="modal-dialog">-->
-        <!--<div class="modal-content">-->
-          <!--<div class="close-modal" data-dismiss="modal">-->
-            <!--<div class="lr">-->
-              <!--<div class="rl"></div>-->
-            <!--</div>-->
-          <!--</div>-->
-          <!--<div class="container">-->
-            <!--<div class="row">-->
-              <!--<div class="col-lg-8 mx-auto">-->
-                <!--<div class="modal-body">-->
-                  <!--&lt;!&ndash; Project Details Go Here &ndash;&gt;-->
-                  <!--<h2>Project Name</h2>-->
-                  <!--<p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>-->
-                  <!--<img class="img-fluid d-block mx-auto" src="img/portfolio/03-full.jpg" alt="">-->
-                  <!--<p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>-->
-                  <!--<ul class="list-inline">-->
-                    <!--<li>Date: January 2017</li>-->
-                    <!--<li>Client: Finish</li>-->
-                    <!--<li>Category: Identity</li>-->
-                  <!--</ul>-->
-                  <!--<button class="btn btn-primary" data-dismiss="modal" type="button">-->
-                    <!--<i class="fa fa-times"></i>-->
-                    <!--Close Project</button>-->
-                <!--</div>-->
-              <!--</div>-->
-            <!--</div>-->
-          <!--</div>-->
-        <!--</div>-->
-      <!--</div>-->
-    <!--</div>-->
-
-    <!--&lt;!&ndash; Modal 4 &ndash;&gt;-->
-    <!--<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">-->
-      <!--<div class="modal-dialog">-->
-        <!--<div class="modal-content">-->
-          <!--<div class="close-modal" data-dismiss="modal">-->
-            <!--<div class="lr">-->
-              <!--<div class="rl"></div>-->
-            <!--</div>-->
-          <!--</div>-->
-          <!--<div class="container">-->
-            <!--<div class="row">-->
-              <!--<div class="col-lg-8 mx-auto">-->
-                <!--<div class="modal-body">-->
-                  <!--&lt;!&ndash; Project Details Go Here &ndash;&gt;-->
-                  <!--<h2>Project Name</h2>-->
-                  <!--<p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>-->
-                  <!--<img class="img-fluid d-block mx-auto" src="img/portfolio/04-full.jpg" alt="">-->
-                  <!--<p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>-->
-                  <!--<ul class="list-inline">-->
-                    <!--<li>Date: January 2017</li>-->
-                    <!--<li>Client: Lines</li>-->
-                    <!--<li>Category: Branding</li>-->
-                  <!--</ul>-->
-                  <!--<button class="btn btn-primary" data-dismiss="modal" type="button">-->
-                    <!--<i class="fa fa-times"></i>-->
-                    <!--Close Project</button>-->
-                <!--</div>-->
-              <!--</div>-->
-            <!--</div>-->
-          <!--</div>-->
-        <!--</div>-->
-      <!--</div>-->
-    <!--</div>-->
-
-    <!--&lt;!&ndash; Modal 5 &ndash;&gt;-->
-    <!--<div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">-->
-      <!--<div class="modal-dialog">-->
-        <!--<div class="modal-content">-->
-          <!--<div class="close-modal" data-dismiss="modal">-->
-            <!--<div class="lr">-->
-              <!--<div class="rl"></div>-->
-            <!--</div>-->
-          <!--</div>-->
-          <!--<div class="container">-->
-            <!--<div class="row">-->
-              <!--<div class="col-lg-8 mx-auto">-->
-                <!--<div class="modal-body">-->
-                  <!--&lt;!&ndash; Project Details Go Here &ndash;&gt;-->
-                  <!--<h2>Project Name</h2>-->
-                  <!--<p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>-->
-                  <!--<img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.jpg" alt="">-->
-                  <!--<p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>-->
-                  <!--<ul class="list-inline">-->
-                    <!--<li>Date: January 2017</li>-->
-                    <!--<li>Client: Southwest</li>-->
-                    <!--<li>Category: Website Design</li>-->
-                  <!--</ul>-->
-                  <!--<button class="btn btn-primary" data-dismiss="modal" type="button">-->
-                    <!--<i class="fa fa-times"></i>-->
-                    <!--Close Project</button>-->
-                <!--</div>-->
-              <!--</div>-->
-            <!--</div>-->
-          <!--</div>-->
-        <!--</div>-->
-      <!--</div>-->
-    <!--</div>-->
-
-    <!--&lt;!&ndash; Modal 6 &ndash;&gt;-->
-    <!--<div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">-->
-      <!--<div class="modal-dialog">-->
-        <!--<div class="modal-content">-->
-          <!--<div class="close-modal" data-dismiss="modal">-->
-            <!--<div class="lr">-->
-              <!--<div class="rl"></div>-->
-            <!--</div>-->
-          <!--</div>-->
-          <!--<div class="container">-->
-            <!--<div class="row">-->
-              <!--<div class="col-lg-8 mx-auto">-->
-                <!--<div class="modal-body">-->
-                  <!--&lt;!&ndash; Project Details Go Here &ndash;&gt;-->
-                  <!--<h2>Project Name</h2>-->
-                  <!--<p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>-->
-                  <!--<img class="img-fluid d-block mx-auto" src="img/portfolio/06-full.jpg" alt="">-->
-                  <!--<p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>-->
-                  <!--<ul class="list-inline">-->
-                    <!--<li>Date: January 2017</li>-->
-                    <!--<li>Client: Window</li>-->
-                    <!--<li>Category: Photography</li>-->
-                  <!--</ul>-->
-                  <!--<button class="btn btn-primary" data-dismiss="modal" type="button">-->
-                    <!--<i class="fa fa-times"></i>-->
-                    <!--Close Project</button>-->
-                <!--</div>-->
-              <!--</div>-->
-            <!--</div>-->
-          <!--</div>-->
-        <!--</div>-->
-      <!--</div>-->
-    <!--</div>-->
+    </div>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/popper/popper.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Contact form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-
     <!-- Custom scripts for this template -->
-    <script src="js/agency.min.js"></script>
+    <script src="js/resume.min.js"></script>
 
   </body>
 
